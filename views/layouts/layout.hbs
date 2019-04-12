@@ -3,11 +3,17 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' />
+    <link href="font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    
   </head>
   <body>
+    {{>header}}
+    <div class="container">
     {{{body}}}
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    </div>
+     <link rel='stylesheet' href='/bootstrap/js/bootstrap.min.js' />
+     <script src="/javascripts/jquery-3.2.1.min.js"></script>
   </body>
 </html>

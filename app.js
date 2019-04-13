@@ -7,7 +7,12 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 
 var app = express();
+
+
 var expressHbs= require('express-handlebars');
+var mongoose=require('mongoose');
+
+mongoose.connect("mongodb://localhost:27017/Shopping", { useNewUrlParser: true });
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout:'layout', extname: '.hbs'}));

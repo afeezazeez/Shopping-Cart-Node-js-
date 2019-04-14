@@ -1,94 +1,21 @@
+{{# each products }}
 <div class="row">
+	{{# each this}}
 	<div class="col-sm-6 col-md-4">
 		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
+			<img src="{{this.imagePath}}" class="image-responsive">
 			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
+				<h3>{{this.title}}</h3>
+				<p class="text-muted">{{this.description}}</p>
 				<div class="clearfix">
 					<div class="price pull-left">
-						$12
+						${{this.price}}
 					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
+						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$12
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$12
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	{{/each}}
 </div>
-<div class="row">
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$12
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$12
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="/images/ipad.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>Thumbnail label</h3>
-				<p class="text-muted">lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator lorem ipsum is a dummy text generator </p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$12
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Button</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+{{/each}}
